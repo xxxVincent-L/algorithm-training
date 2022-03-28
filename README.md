@@ -9,7 +9,7 @@ This repository is mainly to record the practice of some algorithm problems and 
 
 ## Method of classification I:
 
-* [linked list](https://github.com/xxxVincent-L/algorithm-training/Summary/Linked%20List.md)
+* [linked list](https://github.com/xxxVincent-L/algorithm-training/blob/master/Summary/Linked%20List.md)
 
 
 
