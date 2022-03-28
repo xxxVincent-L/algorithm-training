@@ -36,7 +36,7 @@
 
 *  [P19-删除链表的倒数第 N 个结点](https://github.com/xxxVincent-L/algorithm-training/Problems/Top100/P19-Remove-Nth-Node-From-End-of-List.md)
 
-* [P876-链表的倒数第 N 个结点](https://github.com/xxxVincent-L/algorithm-training/Problems/Top100/P876-Middle-of-the-Linked-List.md)
+* [P876-链表的中间结点](https://github.com/xxxVincent-L/algorithm-training/Problems/Top100/P876-Middle-of-the-Linked-List.md)
 
 
 ### 环

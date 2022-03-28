@@ -145,8 +145,31 @@ public:
 ```
 
 ## Summary:
+* 我觉得和P21对比，其实思路也还是清晰的。无非就是——**从两个数中选出最小值演变到从多个数中选出最小值**
+* 那么问题就转变到——**如何以代价最小的方式选到某组数中的最小值！** 那么结合空间复杂度进行考虑，以及本题的特点得出使用**小根堆**。
+* **小根堆**的定义方法也在此有待考量！
+  > 默认的priority_queue是大根堆
+
+    构造方法：
+  * 取反构造小根堆
+  * **priority_queue(int, vector\<int>,greater\<int>)**
+   这里有一点需要额外注意：greater\<int> 中间比较的数值只能是整型！！！即使是ListNode->val 都不可以！所以还是要使用比较函数
+   ```c++
+    struct cmp {
+       bool operator() (ListNode* a, ListNode* b) {
+           return a->val > b->val;
+           }
+        };
+   ```
+   > 在这里耗费了很多时间！
+* C++中并没有 **poll()** 方法，只得用取**top()**\弹出**pop()** 来组合替代！
 
 
 ## Inference:
 * [Docs1-Heap](https://xiaoneng.blog.csdn.net/article/details/103206628?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ETopBlog-1.topblog&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ETopBlog-1.topblog&utm_relevant_index=2)
 * [Docs2-Heap](https://blog.csdn.net/largecub233/article/details/73321440)
+
+
+* [Docs3-Compare Func](https://blog.csdn.net/woxiaohahaa/article/details/53191247)
+
+* [Docs4-Compare Func in STL](https://blog.csdn.net/ivan_zjj/article/details/8654728)
