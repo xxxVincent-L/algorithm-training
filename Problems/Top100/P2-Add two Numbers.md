@@ -75,6 +75,11 @@ public:
             res-> next = new ListNode(1);
             res = res->next;
         }
+   }
+
+        return head->next;
+    }
+};
 ```
 
 ##Summary:

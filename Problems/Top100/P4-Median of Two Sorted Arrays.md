@@ -38,7 +38,7 @@ Difficulty: **Hard**
 
 Language: **C++**
 
-```
+```c++
 class Solution {
 public:
   
@@ -65,9 +65,34 @@ public:
         int len2 = nums2.size();
         int index1 = 0, index2 = 0;
         
-        while(1){
-            if(len1 == index1){
-                return nums2[index2 + k -1];
+        while(1){
+            if(len1 == index1){
+                return nums2[index2 + k -1];
+            }
+            if(len2 == index2){
+                return nums1[index1 + k -1];
+            }
+            if( k == 1){
+                return min(nums1[index1], nums2[index2]);
+            }
+
+            int half = k/2;
+            int newIndex1 = min(half+index1,len1) -1;
+            int newIndex2 = min(half+index2,len2) -1;
+            if(nums1[newIndex1] <= nums2[newIndex2]){
+                k -= newIndex1 - index1 +1;
+                index1 = newIndex1 + 1;
+            }else{
+                k -= newIndex2 - index2 +1;
+                index2 = newIndex2 + 1;
+            }
+
+        }
+
+    }
+
+
+};
 ```
 
 ## Summary:

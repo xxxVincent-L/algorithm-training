@@ -55,7 +55,7 @@ public:
         while(right < s.size()){
             char tempRight = s[right++];
             window[tempRight]++;
-            //3.内存循环 确定左边界
+            //3.内层循环 确定左边界
             while(window[tempRight] > 1){
                 char tempLeft = s[left++];
                 window[tempLeft]--;
