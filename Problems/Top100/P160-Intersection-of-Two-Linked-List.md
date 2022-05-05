@@ -65,7 +65,7 @@ Difficulty: **Easy**
 *   如果 `listA` 和 `listB` 没有交点，`intersectVal` 为 `0`
 *   如果 `listA` 和 `listB` 有交点，`intersectVal == listA[skipA] == listB[skipB]`
 
-**进阶：**你能否设计一个时间复杂度 `O(m + n)` 、仅用 `O(1)` 内存的解决方案？
+**进阶:** 你能否设计一个时间复杂度 `O(m + n)` 、仅用 `O(1)` 内存的解决方案？
 
 
 ## Solution:
